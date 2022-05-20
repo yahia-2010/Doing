@@ -1,7 +1,12 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 
 const OpenButton = () => {
-  return <div>OpenButton</div>;
+  return (
+    <button>
+      <FaBars />
+    </button>
+  );
 };
 
 export default OpenButton;
