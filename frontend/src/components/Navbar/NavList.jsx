@@ -6,7 +6,7 @@ const NavList = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="group relative" onClick={() => setIsClicked(!isClicked)}>
+    <div className="relative" onClick={() => setIsClicked(!isClicked)}>
       <div className="capitalize cursor-pointer flex items-center group gap-x-1">
         <span className="transition group-hover:text-color-primary">
           account
