@@ -1,12 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import NavListLink from "./NavListLink";
+import { FaChevronRight } from "react-icons/fa";
 
 const NavList = () => {
+  const [isClicked, setIsClicked] = useState(false);
+
   return (
-    <div>
-      <span className="capitalize cursor-pointer">account</span>
-      <NavListLink>signup</NavListLink>
-      <NavListLink>login</NavListLink>
+    <div className="group relative" onClick={() => setIsClicked(!isClicked)}>
+      <div className="capitalize cursor-pointer flex items-center group gap-x-1">
+        <span className="transition group-hover:text-color-primary">
+          account
+        </span>
+        <FaChevronRight
+          className={` transition rotate-90 group-hover:text-color-primary ${
+            isClicked || "rotate-0"
+          }`}
+          size={12}
+        />
+      </div>
+      <div
+        className={`transition ${
+          isClicked
+            ? "translate-y-0 pointer-events-auto opacity-100"
+            : "opacity-0 pointer-events-none -translate-y-10"
+        }   absolute flex flex-col right-0 gap-y-1 top-[4.25rem] before:border-l-transparent
+      before:border-l-[20px] before:border-b-gray-light before:border-b-[20px] before:w-0  
+      before:absolute before:right-0 before:-top-5
+      `}
+      >
+        <NavListLink pos="t">signup</NavListLink>
+        <NavListLink pos="b">login</NavListLink>
+      </div>
     </div>
   );
 };

@@ -1,9 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const NavListLink = ({ children }) => {
+const NavListLink = ({ children, pos }) => {
   return (
-    <Link to={children} className="hidden capitalize">
+    <Link
+      to={children}
+      className={`capitalize bg-gray-light p-4 w-48 cursor-pointer transition hover:text-color-primary 
+    rounded-${pos}-md rounded-tr-none
+    `}
+    >
       {children}
     </Link>
   );
