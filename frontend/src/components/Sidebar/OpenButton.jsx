@@ -3,7 +3,7 @@ import { FaBars } from "react-icons/fa";
 
 const OpenButton = () => {
   return (
-    <button>
+    <button className="hidden">
       <FaBars />
     </button>
   );

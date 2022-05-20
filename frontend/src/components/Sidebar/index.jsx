@@ -8,7 +8,7 @@ const Sidebar = () => {
   return (
     <>
       <OpenButton />
-      <aside>
+      <aside className="hidden">
         <CloseButton />
         <div className="">
           {sidebarData.map((link) => (

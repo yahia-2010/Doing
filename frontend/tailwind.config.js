@@ -10,6 +10,13 @@ module.exports = {
         "gray-dark-secondary": "#373737",
       },
     },
+
+    screens: {
+      sm: "360px",
+      md: "600px",
+      lg: "960px",
+      xl: "1024px",
+    },
   },
   plugins: [],
 };

@@ -4,7 +4,7 @@ import NavListLink from "./NavListLink";
 const NavList = () => {
   return (
     <div>
-      <span>account</span>
+      <span className="capitalize cursor-pointer">account</span>
       <NavListLink>signup</NavListLink>
       <NavListLink>login</NavListLink>
     </div>
