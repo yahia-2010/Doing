@@ -6,7 +6,7 @@ const NavListLink = ({ children, pos }) => {
     <Link
       to={children}
       className={`capitalize bg-gray-light p-4 w-48 cursor-pointer transition hover:text-color-primary 
-    rounded-${pos}-md rounded-tr-none
+      rounded-${pos}-md rounded-tr-none drop-shadow-sm
     `}
     >
       {children}

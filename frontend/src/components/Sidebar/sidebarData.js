@@ -6,30 +6,32 @@ import {
   FaCode,
 } from "react-icons/fa";
 
+const iconSize = 28.5;
+
 const sidebarData = [
   {
     label: "todo",
-    icon: <FaRegCheckCircle size={""} className="" />,
+    icon: <FaRegCheckCircle size={iconSize} className="side-icon" />,
     link: "todo",
   },
   {
     label: "clock",
-    icon: <FaClock size={""} className="" />,
+    icon: <FaClock size={iconSize} className="side-icon" />,
     link: "clock",
   },
   {
     label: "notes",
-    icon: <FaRegStickyNote size={""} className="" />,
+    icon: <FaRegStickyNote size={iconSize} className="side-icon" />,
     link: "notes",
   },
   {
     label: "code cards",
-    icon: <FaCode size={""} className="" />,
+    icon: <FaCode size={iconSize} className="side-icon" />,
     link: "code-cards",
   },
   {
     label: "calender",
-    icon: <FaRegCalendar size={""} className="" />,
+    icon: <FaRegCalendar size={iconSize} className="side-icon" />,
     link: "calender",
   },
 ];

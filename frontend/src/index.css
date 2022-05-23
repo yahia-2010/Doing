@@ -14,3 +14,7 @@ span,
 a {
   @apply selection:text-white selection:bg-color-primary;
 }
+
+.side-icon {
+  @apply fill-gray-primary transition group-hover:fill-color-primary;
+}

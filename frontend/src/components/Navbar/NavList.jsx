@@ -25,7 +25,7 @@ const NavList = () => {
             : "opacity-0 pointer-events-none -translate-y-10"
         }   absolute flex flex-col right-0 gap-y-1 top-[4.25rem] before:border-l-transparent
       before:border-l-[20px] before:border-b-gray-light before:border-b-[20px] before:w-0  
-      before:absolute before:right-0 before:-top-5
+      before:absolute before:right-0 before:-top-5 z-40
       `}
       >
         <NavListLink pos="t">signup</NavListLink>
