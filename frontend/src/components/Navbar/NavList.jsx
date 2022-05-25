@@ -6,7 +6,7 @@ const NavList = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <div className="relative" onClick={() => setIsClicked(!isClicked)}>
+    <div className="relative " onClick={() => setIsClicked(!isClicked)}>
       <div className="capitalize cursor-pointer flex items-center group gap-x-1">
         <span className="transition group-hover:text-color-primary">
           account
@@ -23,13 +23,13 @@ const NavList = () => {
           isClicked
             ? "translate-y-0 pointer-events-auto opacity-100"
             : "opacity-0 pointer-events-none -translate-y-10"
-        }   absolute flex flex-col right-0 gap-y-1 top-[4.25rem] before:border-l-transparent
-      before:border-l-[20px] before:border-b-gray-light before:border-b-[20px] before:w-0  
-      before:absolute before:right-0 before:-top-5 z-40
+        }   absolute flex flex-col right-0 gap-y-1 top-[4.25rem] z-40 
+        before:border-b-gray-primary dark:before:border-b-gray-dark-primary triangle
+
       `}
       >
-        <NavListLink pos="t">signup</NavListLink>
-        <NavListLink pos="b">login</NavListLink>
+        <NavListLink>signup</NavListLink>
+        <NavListLink>login</NavListLink>
       </div>
     </div>
   );

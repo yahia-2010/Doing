@@ -16,5 +16,15 @@ a {
 }
 
 .side-icon {
-  @apply fill-gray-primary transition group-hover:fill-color-primary;
+  @apply fill-gray-primary transition group-hover:fill-color-primary dark:fill-gray-light;
+}
+
+.triangle::before {
+  border-left-color: transparent;
+  border-left-width: 20px;
+  border-bottom-width: 20px;
+  width: 0;
+  position: absolute;
+  right: 0px;
+  top: -1.25rem;
 }

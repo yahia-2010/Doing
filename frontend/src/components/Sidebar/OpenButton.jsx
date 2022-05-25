@@ -9,7 +9,7 @@ const OpenButton = ({ open }) => {
     >
       <FaBars
         size={25}
-        className="fill-gray-primary transition duration-200 group-hover:fill-color-primary"
+        className="fill-gray-primary transition duration-200 group-hover:fill-color-primary dark:fill-gray-dark-primary"
       />
     </button>
   );

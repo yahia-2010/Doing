@@ -13,12 +13,12 @@ const ThemeToggle = () => {
       {theme === "light" ? (
         <FaMoon
           size={17.5}
-          className="fill-gray-primary transition group-hover:fill-color-primary"
+          className="fill-gray-primary transition group-hover:fill-color-primary dark:fill-gray-dark-primary"
         />
       ) : (
         <FaSun
           size={17.5}
-          className="fill-gray-primary transition group-hover:fill-color-primary"
+          className="fill-gray-primary transition group-hover:fill-color-primary dark:fill-gray-dark-primary"
         />
       )}
     </button>
