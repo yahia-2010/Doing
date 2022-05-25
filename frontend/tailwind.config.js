@@ -19,5 +19,5 @@ module.exports = {
       xl: "1024px",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-children")],
 };

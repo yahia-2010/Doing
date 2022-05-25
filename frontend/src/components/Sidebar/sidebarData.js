@@ -6,7 +6,7 @@ import {
   FaCode,
 } from "react-icons/fa";
 
-const iconSize = 28.5;
+const iconSize = 27.5;
 
 const sidebarData = [
   {

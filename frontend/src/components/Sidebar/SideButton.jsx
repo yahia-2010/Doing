@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 const SideButton = ({ link, label, icon }) => {
   const l = useLocation();
   const location = l.pathname;
-  // indication
+
   return (
     <Link
       to={link}
